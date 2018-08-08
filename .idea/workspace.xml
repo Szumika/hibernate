@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Spring01hibernate:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="61c4ee93-b606-440d-b973-961b94d28da4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/app/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/app/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/app/SpringDiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/AuthorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/PersonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/PersonDetailsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/PublisherController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/converter/AuthorConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/AuthorDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/PersonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/PersonDetailsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/PublisherDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Author.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/PersonDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resouces/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resouces/ValidationMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/author/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/addForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ok.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/addform.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/addformtag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/addformtag1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/readform.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/persondetail/addstare.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ValidationMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/classes/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/classes/ValidationMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/author/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/book/addForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/book/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/book/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/book/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/form/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/ok.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/person/addform.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/person/addformtag.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/person/addformtag1.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/person/readform.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/views/persondetail/addstare.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/mvcTest/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/BookController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1784#1785#0" expanded="true" />
+                <element signature="e#1842#1843#0" expanded="true" />
+                <element signature="e#2331#2332#0" expanded="true" />
+                <element signature="e#2365#2366#0" expanded="true" />
+                <element signature="e#1988#1989#0" expanded="true" />
+                <element signature="e#2014#2015#0" expanded="true" />
+                <element signature="e#2428#2429#0" expanded="true" />
+                <element signature="e#2476#2477#0" expanded="true" />
+                <element signature="e#2726#2727#0" expanded="true" />
+                <element signature="e#2755#2756#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/edit.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addForm.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/addForm.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthorController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/AuthorController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/author/add.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/app/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="e#2011#2012#0" expanded="true" />
+                <element signature="e#2067#2068#0" expanded="true" />
+                <element signature="e#2284#2285#0" expanded="true" />
+                <element signature="e#2338#2339#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidationMessages.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resouces/ValidationMessages.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Author.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Author.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+              <folding>
+                <element signature="e#1336#1337#0" expanded="true" />
+                <element signature="e#1396#1397#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addform.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/addform.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bookDao</find>
+      <find>saveBook</find>
+      <find>js</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/main/resouces</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/app/SpringDiApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/app/AppInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/resouces/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/BookDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/PersonDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/readform.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form/success.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/PersonDetailsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/PersonDetailsController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/persondetail/add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/persondetail/addstare.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/addform.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/PersonExt.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/addformtag1.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/PersonDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/addformtag.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/PersonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/PublisherController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/PublisherDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Publisher.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ok.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/converter/AuthorConverter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/AuthorDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Author.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/delete.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Book.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/dao/BookDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/edit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/BookController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/addForm.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/controller/AuthorController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/author/add.jsp" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/app/AppConfig.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="709" />
+    <option name="y" value="145" />
+    <option name="width" value="798" />
+    <option name="height" value="716" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Spring01hibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring01hibernate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spring01hibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring01hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spring01hibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring01hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spring01hibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring01hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Spring01hibernate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spring01hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resouces" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.coderslab.entity" />
+      <recent name="pl.coderslab.controller" />
+      <recent name="pl.coderslab.dao" />
+      <recent name="pl.coderslab.app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/persondetail" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="tom9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.8" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="Spring01hibernate:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Spring01hibernate" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="41863" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Spring01hibernate:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61c4ee93-b606-440d-b973-961b94d28da4" name="Default" comment="" />
+      <created>1533543765138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1533543765138</updated>
+      <workItem from="1533543769632" duration="45251000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="45251000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1535" height="904" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Application Servers" order="0" weight="0.32903227" />
+      <window_info anchor="right" id="Maven Projects" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.08462055" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="15" />
+      <window_info anchor="bottom" id="Messages" order="3" weight="0.32903227" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="bottom" id="Java Enterprise" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.32988358" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Spring" order="1" weight="0.32903227" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.24983211" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info id="Web" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="SonarLint" order="5" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.32903227" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/app/AppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/app/SpringDiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resouces/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="64" selection-start-line="17" selection-start-column="64" selection-end-line="17" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form/success.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/readform.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="48" lean-forward="true" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/persondetail/addstare.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/entity/PersonExt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/persondetail/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/dao/PersonDetailsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#409#410#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#957#958#0" expanded="true" />
+            <element signature="e#985#986#0" expanded="true" />
+            <element signature="e#1027#1028#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1096#1097#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1215#1216#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1317#1318#0" expanded="true" />
+            <element signature="e#1351#1352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/addformtag1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="71" lean-forward="true" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/entity/PersonDetails.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#692#693#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#776#777#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#912#913#0" expanded="true" />
+            <element signature="e#1502#1503#0" expanded="true" />
+            <element signature="e#1536#1537#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1637#1638#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="113" column="46" lean-forward="true" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3497#3505#0" expanded="true" />
+            <element signature="e#3805#3813#0" expanded="true" />
+            <element signature="e#4148#4156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/day2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/addformtag.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/ok.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/dao/AuthorDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Publisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/delete.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/dao/PersonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="10" selection-start-line="10" selection-end-line="30" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#417#418#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/dao/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-582">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#749#750#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/converter/AuthorConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/dao/PublisherDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/PublisherController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="43" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/PersonDetailsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="54" column="28" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/person/addform.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/entity/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding>
+            <element signature="e#1336#1337#0" expanded="true" />
+            <element signature="e#1396#1397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#1842#1843#0" expanded="true" />
+            <element signature="e#2331#2332#0" expanded="true" />
+            <element signature="e#2365#2366#0" expanded="true" />
+            <element signature="e#1988#1989#0" expanded="true" />
+            <element signature="e#2014#2015#0" expanded="true" />
+            <element signature="e#2428#2429#0" expanded="true" />
+            <element signature="e#2476#2477#0" expanded="true" />
+            <element signature="e#2726#2727#0" expanded="true" />
+            <element signature="e#2755#2756#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/controller/AuthorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/book/addForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/author/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/app/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#2011#2012#0" expanded="true" />
+            <element signature="e#2067#2068#0" expanded="true" />
+            <element signature="e#2284#2285#0" expanded="true" />
+            <element signature="e#2338#2339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resouces/ValidationMessages.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
