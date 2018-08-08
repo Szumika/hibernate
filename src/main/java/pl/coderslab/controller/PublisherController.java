@@ -2,10 +2,8 @@ package pl.coderslab.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.*;
 import pl.coderslab.dao.BookDao;
 import pl.coderslab.dao.PublisherDao;
 import pl.coderslab.entity.Author;
@@ -13,6 +11,7 @@ import pl.coderslab.entity.Book;
 import pl.coderslab.entity.Publisher;
 
 import javax.transaction.Transactional;
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/publisher")
@@ -21,15 +20,19 @@ public class PublisherController {
     private PublisherDao publisherDao;
     @Autowired
     private BookDao bookDao;
-    @RequestMapping("/add/{name}")
-    @ResponseBody
-    public String hello(@PathVariable String name){
-        Publisher publisher  = new Publisher();
-        publisher.setName(name);
-        publisherDao.save(publisher);
-        return "Id dodanego publishera to:"
-                +  publisher.getId() + "find: " + publisherDao.findById(publisher.getId()) ; }
+    @GetMapping("/add")
+    public String hello(@Valid Publisher publisher, BindingResult result){
+        return "publisher/add";
+    }
 
+    @PostMapping("/add")
+    public String addau(@Valid  Publisher publisher, BindingResult result){
+        if(result.hasErrors()){
+            return "publisher/add";
+        }
+        publisherDao.save(publisher);
+        return "form/success";
+    }
 
 //    @GetMapping("/addbook/{pubid}/{bookid}")
 //    @ResponseBody

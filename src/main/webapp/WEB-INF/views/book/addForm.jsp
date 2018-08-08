@@ -36,6 +36,14 @@
         <form:label path="description">description</form:label>
         <form:input type="description" path="description" id="rating"/>
     </div>
+    <div>
+        <form:label path="pages">Pages</form:label>
+        <form:input type="number" path="pages" id="pages"/>
+    </div>
+    <div>
+        <form:label path="propostition">Proposition</form:label>
+        <form:checkbox path="propostition" id="propostition"></form:checkbox>
+    </div>
 <input type="submit"><br>
 
 

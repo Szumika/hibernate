@@ -1,10 +1,14 @@
 package pl.coderslab.entity;
 
+import pl.coderslab.validation.IsOver18YO;
+import pl.coderslab.validation.PropostiteBookValidate;
+
 import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.validation.groups.Default;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,20 +21,33 @@ public class Book {
     @Column(name = "myTitle",
             length=100,
             nullable = false)
-    @Size(min = 5)
+    @Size(min = 5, groups={PropostiteBookValidate.class, Default.class})
     private String title;
     @Min(1)
     @Max(10)
     private int rating;
     @Column(columnDefinition="TEXT")
-    @Size(max=600)
+    @Size(max=600, groups={PropostiteBookValidate.class, Default.class})
     private String description;
-    //just for valid test
-    @Transient
-    @NotNull
-    public Author author;
     @Min(value = 2, message = "przynajmniej 2 str nie osmieszaj sie ")
     private int pages;
+  private boolean propostition;
+
+    public Boolean getPropostition() {
+        return propostition;
+    }
+
+    public void setPropostition(Boolean propostition) {
+        this.propostition = propostition;
+    }
+
+    public int getPages() {
+        return pages;
+    }
+
+    public void setPages(int pages) {
+        this.pages = pages;
+    }
 
     public Publisher getPublisher() {
         return publisher;
@@ -45,6 +62,8 @@ public class Book {
     private Publisher publisher;
     @ManyToMany( fetch = FetchType.EAGER)
     private List<Author> authors = new ArrayList<>();
+
+
 
     public List<Author> getAuthors() {
         return authors;
@@ -99,12 +118,5 @@ public class Book {
                 ", description='" + description + '\'';
     }
 
-    public Book(String title, int rating,  String description) {
-        this.title = title;
-
-        this.rating = rating;
-
-        this.description = description;
-    }
 }
 

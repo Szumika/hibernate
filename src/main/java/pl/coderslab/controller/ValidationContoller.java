@@ -9,8 +9,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import pl.coderslab.entity.Author;
 import pl.coderslab.entity.Book;
 import pl.coderslab.entity.Publisher;
+import pl.coderslab.model.ValidationTest;
 
 import javax.validation.Constraint;
+import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintViolation;
 import javax.validation.Validator;
 import java.util.Set;
@@ -42,6 +44,7 @@ private Validator validator;
     @GetMapping("/validateview")
     public String validate(Model model){
         Book b = new Book();
+        b.setTitle("ala");
         Set<ConstraintViolation<Book>> violations = validator.validate(b);
         model.addAttribute("violations", violations);
             return "validation";
@@ -62,6 +65,50 @@ private Validator validator;
         Set<ConstraintViolation<Publisher>> violations = validator.validate(a);
         model.addAttribute("violations", violations);
         return "validation";
+    }
+
+
+    @GetMapping("myown")
+    @ResponseBody
+    public String myOwnValidator(){
+        Author author = new Author();
+        author.setFirstname("Adrian");
+        author.setLastname("Lany");
+        author.setYearOfBirth(2007);
+        Set<ConstraintViolation<Author>> violations = this.validator.validate(author);
+        if(violations.isEmpty()){
+            return "Ok";
+        }
+        else{
+            String result = "Vuilations: <br>\n";
+            for(ConstraintViolation<Author>a : violations){
+                result += a.getPropertyPath() + " " + a.getMessage() + "<br>\n";
+            }
+            return result;
+        }
+
+    }
+
+
+    @GetMapping("overxyo")
+    @ResponseBody
+    public String myOwnValidatorxyo() {
+       ValidationTest test = new ValidationTest();
+       test.yearOfBirth = 2005;
+       Set<ConstraintViolation<ValidationTest>> violations = this.validator.validate(test);
+        if(violations.isEmpty()){
+            return "Ok";
+        }
+        else{
+            String result = "Vuilations: <br>\n";
+            for(ConstraintViolation<ValidationTest> a : violations){
+                result += a.getPropertyPath() + " " + a.getMessage() + "<br>\n";
+            }
+            return result;
+        }
+
+
+
     }
     }
 

@@ -17,28 +17,13 @@
 <div>
     <form:label path="title">Title</form:label>
     <form:input path="title" id="title"/>
+    <form:errors path="title"></form:errors>
 </div>
-    <div>
-        <form:label path="authors">authors</form:label>
-        <form:select path="authors" items="${authors}"
-                     itemLabel="fullName" itemValue="id" multiple="true"/>
-    </div>
-    <div>
-        <form:label path="publisher">publisher</form:label>
-        <form:select path="publisher.id" items="${publisher}"
-        itemLabel="name" itemValue="id"/>
-    </div>
-    <div>
-        <form:label path="rating">rating</form:label>
-        <form:input type="number" path="rating" id="rating"/>
-    </div>
+
     <div>
         <form:label path="description">description</form:label>
         <form:input type="description" path="description" id="rating"/>
-    </div>
-    <div>
-        <form:label path="pages">Pages</form:label>
-        <form:input type="number" path="pages" id="pages"/>
+        <form:errors path="description"></form:errors>
     </div>
     <div>
         <form:label path="propostition">Proposition</form:label>

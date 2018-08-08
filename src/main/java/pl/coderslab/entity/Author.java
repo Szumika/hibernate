@@ -3,6 +3,7 @@ package pl.coderslab.entity;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.pl.PESEL;
+import pl.coderslab.validation.IsOver18YO;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -19,6 +20,7 @@ public class Author {
     private String firstname;
     @NotBlank
     private String lastname;
+    private int yearOfBirth;
 //    @ManyToMany(fetch = FetchType.EAGER,cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 //    private List<Book> books = new ArrayList<>();
 //
@@ -35,6 +37,14 @@ public class Author {
     @Transient
     @PESEL
     private String PESEL;
+    @IsOver18YO
+    public int getYearOfBirth() {
+        return yearOfBirth;
+    }
+
+    public void setYearOfBirth(int yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
+    }
 
     public Author(String email, String PESEL) {
         this.email = email;

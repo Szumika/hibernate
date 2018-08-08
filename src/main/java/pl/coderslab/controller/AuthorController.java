@@ -2,13 +2,13 @@ package pl.coderslab.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import pl.coderslab.dao.AuthorDao;
 import pl.coderslab.dao.BookDao;
 import pl.coderslab.entity.Author;
-import pl.coderslab.entity.Book;
-import pl.coderslab.entity.Publisher;
+
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/author")
@@ -20,13 +20,15 @@ public class AuthorController {
 
 
     @GetMapping("/add")
-    public String hello(Model model){
-        model.addAttribute("author",new Author());
+    public String hello(@Valid  Author author, BindingResult result){
         return "author/add";
     }
 
         @PostMapping("/add")
-        public String addau(@ModelAttribute Author author){
+        public String addau(@Valid  Author author, BindingResult result){
+        if(result.hasErrors()){
+            return "author/add";
+        }
         authorDao.save(author);
         return "form/success";
         }

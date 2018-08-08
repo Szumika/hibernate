@@ -43,5 +43,11 @@ public class BookDao {
                 .createQuery("select k from Book k");
         return q.getResultList();
     }
+    public List<Book> readProp(){
+        Query q = this.entityManager
+                .createQuery("select u from Book  u where propostition=true");
+//        q.setParameter("prop",true);
+        return q.getResultList();
+    }
 
 }
