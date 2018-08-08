@@ -1,6 +1,11 @@
 package pl.coderslab.entity;
 
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.pl.NIP;
+import org.hibernate.validator.constraints.pl.REGON;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +15,14 @@ public class Publisher {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @NotBlank
     private String name;
+    @Transient
+    @NIP
+    private String nip;
+    @Transient
+    @REGON
+    private String regon;
     @OneToMany//(fetch = FetchType.EAGER)
     private List<Book> books = new ArrayList<>();
 
@@ -23,6 +35,22 @@ public class Publisher {
     }
 
     public Publisher() {
+    }
+
+    public String getNip() {
+        return nip;
+    }
+
+    public void setNip(String nip) {
+        this.nip = nip;
+    }
+
+    public String getRegon() {
+        return regon;
+    }
+
+    public void setRegon(String regon) {
+        this.regon = regon;
     }
 
     public long getId() {
