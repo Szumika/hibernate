@@ -17,10 +17,8 @@ public class Publisher {
     private long id;
     @NotBlank
     private String name;
-    @Transient
     @NIP
     private String nip;
-    @Transient
     @REGON
     private String regon;
     @OneToMany//(fetch = FetchType.EAGER)

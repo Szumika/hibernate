@@ -31,12 +31,10 @@ public class Author {
 //    public void setBooks(List<Book> books) {
 //        this.books = books;
 //    }
-    @Transient
     @Email
     private String email;
-    @Transient
     @PESEL
-    private String PESEL;
+    private String pesel;
     @IsOver18YO
     public int getYearOfBirth() {
         return yearOfBirth;
@@ -48,7 +46,7 @@ public class Author {
 
     public Author(String email, String PESEL) {
         this.email = email;
-        this.PESEL = PESEL;
+        this.pesel = PESEL;
     }
 
     public String getEmail() {
@@ -59,12 +57,12 @@ public class Author {
         this.email = email;
     }
 
-    public String getPESEL() {
-        return PESEL;
+    public String getPesel() {
+        return pesel;
     }
 
-    public void setPESEL(String PESEL) {
-        this.PESEL = PESEL;
+    public void setPesel(String pesel) {
+        this.pesel = pesel;
     }
 
     public Author() {

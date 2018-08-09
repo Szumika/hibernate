@@ -120,5 +120,20 @@ public class Book {
                 ", description='" + description + '\'';
     }
 
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+
+    public boolean isPropostition() {
+        return propostition;
+    }
+
+    public void setPropostition(boolean propostition) {
+        this.propostition = propostition;
+    }
 }
 
