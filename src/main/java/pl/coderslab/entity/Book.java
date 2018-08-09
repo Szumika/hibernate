@@ -31,6 +31,8 @@ public class Book {
     private String description;
     @Min(value = 2, message = "przynajmniej 2 str nie osmieszaj sie ")
     private int pages;
+    @ManyToOne
+    private Category category;
   private boolean propostition;
 
     public Boolean getPropostition() {

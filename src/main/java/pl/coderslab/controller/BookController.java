@@ -13,6 +13,7 @@ import pl.coderslab.entity.Book;
 import pl.coderslab.entity.Publisher;
 
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -117,6 +118,7 @@ return "redirect:../list";
         bookDao.romoveById(id);
         return "redirect:../list";
     }
+
 
 
 
