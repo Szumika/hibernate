@@ -214,6 +214,12 @@ import java.util.List;
         }
 
 
+        @GetMapping("/reset/{rating}")
+        public String resetRating(@PathVariable int rating){
+            this.bookRepository.resetRating(rating);
+            return "book/list";
+        }
+
 
     @ModelAttribute("books")
         public List<Book> books(){

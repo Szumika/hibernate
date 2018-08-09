@@ -10,7 +10,7 @@ import pl.coderslab.entity.Publisher;
 
 import java.util.List;
 
-public interface BookRepository extends JpaRepository<Book, Long> {
+public interface BookRepository extends JpaRepository<Book, Long> , ResetRatingInteface  {
 
      List<Book>findAllByTitle(String title);
      List<Book>findAllByCategory(Category category);
